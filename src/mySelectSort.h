@@ -14,6 +14,4 @@ public:
 	void static sort(int a[], int l);
 };
 
-
-
 #endif /* MYSELECTSORT_H_ */

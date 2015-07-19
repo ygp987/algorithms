@@ -5,7 +5,6 @@
  *      Author: ygp
  */
 
-
 //#include"test.h"
 #include "myAlgorithms.h"
 

@@ -11,9 +11,7 @@
 class myInsertSort
 {
 public:
-	void static sort(int a[],int l);
+	void static sort(int a[], int l);
 };
-
-
 
 #endif /* MYINSERTSORT_H_ */
