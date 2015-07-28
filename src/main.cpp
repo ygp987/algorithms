@@ -13,25 +13,26 @@ using namespace std;
 
 int main()
 {
-	int a[8] =
-	{ 2, 3, 4, 5, 1, 8, 7, 6 };
+
+	int a[8] = { 2, 3, 4, 5, 1, 8, 7, 6 };		//≤Â»Î≈≈–Ú
 
 	myInsertSort::sort(a, 8);
 	myAlgorithms::display(a, 8);
 
-	int b[8] =
-	{ 2, 3, 4, 5, 1, 8, 7, 6 };
+	int b[8] = { 2, 3, 4, 5, 1, 8, 7, 6 };		//—°‘Ò≈≈–Ú
 
 	mySelectSort::sort(b, 8);
 	myAlgorithms::display(b, 8);
 
-	int c[8] =
-	{ 2, 3, 4, 5, 1, 8, 7, 6 };
+	int c[8] = { 2, 3, 4, 5, 1, 8, 7, 6 };		//√∞≈›≈≈–Ú
 
 	myBubbleSort::sort(c, 8);
 	myAlgorithms::display(c, 8);
 
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	int d[8] = { 0, 10, 5, 1, 4, 2, 6, 8 };		//πÈ≤¢≈≈–Ú
+
+	myMergeSort::sort(d, 8);
+	myAlgorithms::display(d, 8);
 
 	return 0;
 }

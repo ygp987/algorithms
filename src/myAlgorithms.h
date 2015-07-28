@@ -13,6 +13,7 @@
 #include "myInsertSort.h"
 #include "mySelectSort.h"
 #include "myBubbleSort.h"
+#include "myMergeSort.h"
 
 #include "test.h"
 
