@@ -1,7 +1,7 @@
 /*
  * myShellSort.h
  *
- *  Created on: 2015Äê7ÔÂ28ÈÕ
+ *  Created on: 2015å¹´7æœˆ28æ—¥
  *      Author: ygp
  */
 

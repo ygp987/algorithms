@@ -1,7 +1,7 @@
 /*
  * myAlgorithms.cpp
  *
- *  Created on: 2015Äê6ÔÂ15ÈÕ
+ *  Created on: 2015å¹´6æœˆ15æ—¥
  *      Author: ygp
  */
 

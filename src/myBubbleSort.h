@@ -1,7 +1,7 @@
 /*
  * myBubbleSort.h
  *
- *  Created on: 2015Äê7ÔÂ19ÈÕ
+ *  Created on: 2015å¹´7æœˆ19æ—¥
  *      Author: ygp
  */
 

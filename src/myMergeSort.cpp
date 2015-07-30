@@ -1,7 +1,7 @@
 /*
  * myMergeSort.cpp
  *
- *  Created on: 2015Äê7ÔÂ23ÈÕ
+ *  Created on: 2015å¹´7æœˆ23æ—¥
  *      Author: ygp
  */
 
@@ -14,7 +14,7 @@ void myMergeSort::merge(int a[], int tmp[], int lPos, int rPos, int rEnd)
 	tmpPos = lPos;
 	num = rEnd - lPos + 1;
 
-	while (lPos <= lEnd && rPos <= rEnd)	//Ö÷ÒªÑ­»·
+	while (lPos <= lEnd && rPos <= rEnd)	//ä¸»è¦å¾ªçŽ¯
 	{
 		if (a[lPos] <= a[rPos])
 		{
@@ -30,19 +30,19 @@ void myMergeSort::merge(int a[], int tmp[], int lPos, int rPos, int rEnd)
 		}
 	}
 
-	while (lPos <= lEnd)				//¸´ÖÆÊ£ÓàµÄµÚÒ»°ë
+	while (lPos <= lEnd)				//å¤åˆ¶å‰©ä½™çš„ç¬¬ä¸€åŠ
 	{
 		tmp[tmpPos] = a[lPos];
 		tmpPos++;
 		lPos++;
 	}
-	while (rPos <= rEnd)				//¸´ÖÆÊ£ÓàµÄµÚ¶þ°ë
+	while (rPos <= rEnd)				//å¤åˆ¶å‰©ä½™çš„ç¬¬äºŒåŠ
 	{
 		tmp[tmpPos] = a[rPos];
 		tmpPos++;
 		rPos++;
 	}
-	for (i = 0; i < num; i++, rEnd--)	//°ÑÁÙÊ±Êý×é¸´ÖÆ»ØÔ­Êý×é
+	for (i = 0; i < num; i++, rEnd--)	//æŠŠä¸´æ—¶æ•°ç»„å¤åˆ¶å›žåŽŸæ•°ç»„
 	{
 		a[rEnd] = tmp[rEnd];
 	}

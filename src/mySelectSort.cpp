@@ -1,7 +1,7 @@
 /*
  * mySelectSort.cpp
  *
- *  Created on: 2015Äê6ÔÂ20ÈÕ
+ *  Created on: 2015å¹´6æœˆ20æ—¥
  *      Author: ygp
  */
 

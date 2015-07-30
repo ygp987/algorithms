@@ -1,7 +1,7 @@
 /*
  * myMergeSort.h
  *
- *  Created on: 2015Äê7ÔÂ23ÈÕ
+ *  Created on: 2015å¹´7æœˆ23æ—¥
  *      Author: ygp
  */
 
