@@ -9,11 +9,15 @@
 #define MYALGORITHMS_H_
 
 #include <iostream>
+#include <ctime>
+#include <cstdlib>
+#include <cstring>
 
 #include "myInsertSort.h"
 #include "mySelectSort.h"
 #include "myBubbleSort.h"
 #include "myMergeSort.h"
+#include "myShellSort.h"
 
 #include "test.h"
 
@@ -22,7 +26,8 @@ using namespace std;
 class myAlgorithms
 {
 public:
-	void static display(int a[], int l);
+	static void display(int a[], int l);
+	static void randomArry(int a[], int min, int max, int N);
 };
 
 #endif /* MYALGORITHMS_H_ */

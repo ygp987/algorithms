@@ -62,10 +62,11 @@ void myMergeSort::msort(int a[], int tmp[], int left, int right)
 }
 void myMergeSort::sort(int a[], int l)
 {
-	int tmp[l] = { 0 };
+	int* tmp = new int[l];
 
 	if (tmp != 0)
 	{
 		msort(a, tmp, 0, l - 1);
+		delete[] tmp;
 	}
 }

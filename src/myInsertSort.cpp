@@ -23,4 +23,20 @@ void myInsertSort::sort(int a[], int l)
 		a[j + 1] = temp;
 	}
 }
+void myInsertSort::sort(int a[], int l, int increment)
+{
+	int i = 0, j = 0;
+	int temp = 0;
+	for (i = increment; i < l; i++)
+	{
+		j = i - increment;
+		temp = a[i];
+		while (j >= 0 && a[j] > temp)
+		{
+			a[j + increment] = a[j];
+			j -= increment;
+		}
+		a[j + increment] = temp;
+	}
+}
 

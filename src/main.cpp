@@ -11,28 +11,49 @@
 
 using namespace std;
 
+const int arryLength = 100000;
+
 int main()
 {
+	int a[arryLength] = { 0 }, tmp[arryLength] = { 0 };	//≥ı ºªØ
+	int timeStart = 0, timeEnd = 0;
+	myAlgorithms::randomArry(a, 0, 100000, arryLength);
+	memcpy(tmp, a, sizeof(tmp));
 
-	int a[8] = { 2, 3, 4, 5, 1, 8, 7, 6 };		//≤Â»Î≈≈–Ú
+	timeStart = clock();
+	myInsertSort::sort(a, arryLength);			//≤Â»Î≈≈–Ú
+	timeEnd = clock();
+	cout << timeEnd - timeStart << endl;
+//	myAlgorithms::display(a, arryLength);
 
-	myInsertSort::sort(a, 8);
-	myAlgorithms::display(a, 8);
+	memcpy(a, tmp, sizeof(a));
+	timeStart = clock();
+	mySelectSort::sort(a, arryLength);			//—°‘Ò≈≈–Ú
+	timeEnd = clock();
+	cout << timeEnd - timeStart << endl;
+//	myAlgorithms::display(a, arryLength);
 
-	int b[8] = { 2, 3, 4, 5, 1, 8, 7, 6 };		//—°‘Ò≈≈–Ú
+	memcpy(a, tmp, sizeof(a));
+	timeStart = clock();
+	myBubbleSort::sort(a, arryLength);			//√∞≈›≈≈–Ú
+	timeEnd = clock();
+	cout << timeEnd - timeStart << endl;
+//	myAlgorithms::display(a, arryLength);
 
-	mySelectSort::sort(b, 8);
-	myAlgorithms::display(b, 8);
+	memcpy(a, tmp, sizeof(a));
+	timeStart = clock();
+	myMergeSort::sort(a, arryLength);			//πÈ≤¢≈≈–Ú
+	timeEnd = clock();
+	cout << timeEnd - timeStart << endl;
+//	myAlgorithms::display(a, arryLength);
 
-	int c[8] = { 2, 3, 4, 5, 1, 8, 7, 6 };		//√∞≈›≈≈–Ú
+	memcpy(a, tmp, sizeof(a));
+	timeStart = clock();
+	myShellSort::sort(a, arryLength);			//œ£∂˚≈≈–Ú
+	timeEnd = clock();
+	cout << timeEnd - timeStart << endl;
+//	myAlgorithms::display(a, arryLength);
 
-	myBubbleSort::sort(c, 8);
-	myAlgorithms::display(c, 8);
-
-	int d[8] = { 0, 10, 5, 1, 4, 2, 6, 8 };		//πÈ≤¢≈≈–Ú
-
-	myMergeSort::sort(d, 8);
-	myAlgorithms::display(d, 8);
 
 	return 0;
 }

@@ -16,3 +16,13 @@ void myAlgorithms::display(int a[], int l)
 	}
 	cout << endl;
 }
+
+void myAlgorithms::randomArry(int a[], int min, int max, int N)
+{
+	srand((unsigned) time(NULL));
+
+	for (int i = 0; i < N; i++)
+	{
+		a[i] = rand() % (int) (max - min + 1) + min;
+	}
+}
