@@ -11,15 +11,18 @@
 
 using namespace std;
 
-const int arryLength = 100000;
+const int arryLength = 100;
 
 int main()
 {
 	int a[arryLength] = { 0 }, tmp[arryLength] = { 0 };	//初始化
 	int timeStart = 0, timeEnd = 0;
-	myAlgorithms::randomArry(a, 0, 100000, arryLength);
+	myAlgorithms::randomArry(a, 0, 100, arryLength);
 	memcpy(tmp, a, sizeof(tmp));
 
+//	myAlgorithms::display(a, arryLength);
+
+/*
 	timeStart = clock();
 	myInsertSort::sort(a, arryLength);			//插入排序
 	timeEnd = clock();
@@ -39,7 +42,7 @@ int main()
 	timeEnd = clock();
 	cout << timeEnd - timeStart << endl;
 //	myAlgorithms::display(a, arryLength);
-
+*/
 	memcpy(a, tmp, sizeof(a));
 	timeStart = clock();
 	myMergeSort::sort(a, arryLength);			//归并排序
@@ -54,6 +57,13 @@ int main()
 	cout << timeEnd - timeStart << endl;
 //	myAlgorithms::display(a, arryLength);
 
+
+	memcpy(a, tmp, sizeof(a));
+	timeStart = clock();
+	myHeapSort::sort(a, arryLength);			//堆排序
+	timeEnd = clock();
+	cout << timeEnd - timeStart << endl;
+	myAlgorithms::display(a, arryLength);
 
 	return 0;
 }

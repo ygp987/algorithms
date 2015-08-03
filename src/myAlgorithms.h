@@ -18,6 +18,7 @@
 #include "myBubbleSort.h"
 #include "myMergeSort.h"
 #include "myShellSort.h"
+#include "myHeapSort.h"
 
 #include "test.h"
 
