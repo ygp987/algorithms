@@ -19,6 +19,4 @@ public:
 	static void sort(int a[], int length);
 };
 
-
-
 #endif /* MYHEAPSORT_H_ */

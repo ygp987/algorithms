@@ -26,3 +26,9 @@ void myAlgorithms::randomArry(int a[], int min, int max, int N)
 		a[i] = rand() % (int) (max - min + 1) + min;
 	}
 }
+void myAlgorithms::swap(int& a, int& b)
+{
+	int temp = a;
+	a = b;
+	b = temp;
+}
