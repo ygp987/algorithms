@@ -7,9 +7,10 @@
 
 #include "myAlgorithms.h"
 
-void mySelectSort::sort(int a[], int l)
+void mySelectSort::sort(element a[], int l)
 {
-	int i = 0, j = 0, temp = 0, pos = 0;
+	int i = 0, j = 0, pos = 0;
+	element temp = 0;
 	for (i = 0; i < l - 1; i++)
 	{
 		pos = i;

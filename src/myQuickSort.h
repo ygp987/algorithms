@@ -11,9 +11,9 @@
 class myQuickSort
 {
 public:
-	static int partition(int a[], int left, int right);
-	static void qSort(int a[], int left, int right);
-	static void sort(int a[], int arryLength);
+	static int partition(element a[], int left, int right);
+	static void qSort(element a[], int left, int right);
+	static void sort(element a[], int arryLength);
 };
 
 #endif /* MYQUICKSORT_H_ */

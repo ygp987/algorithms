@@ -11,9 +11,9 @@
 class myMergeSort
 {
 public:
-	void static merge(int a[], int tmp[], int lPos, int rPos, int rEnd);
-	void static msort(int a[], int tmp[], int left, int right);
-	void static sort(int a[], int l);
+	void static merge(element a[], element tmp[], int lPos, int rPos, int rEnd);
+	void static msort(element a[], element tmp[], int left, int right);
+	void static sort(element a[], int l);
 
 };
 

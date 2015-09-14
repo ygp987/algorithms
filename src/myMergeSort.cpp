@@ -7,7 +7,7 @@
 
 #include "myAlgorithms.h"
 
-void myMergeSort::merge(int a[], int tmp[], int lPos, int rPos, int rEnd)
+void myMergeSort::merge(element a[], element tmp[], int lPos, int rPos, int rEnd)
 {
 	int i, lEnd, num, tmpPos;
 	lEnd = rPos - 1;
@@ -48,7 +48,7 @@ void myMergeSort::merge(int a[], int tmp[], int lPos, int rPos, int rEnd)
 	}
 
 }
-void myMergeSort::msort(int a[], int tmp[], int left, int right)
+void myMergeSort::msort(element a[], element tmp[], int left, int right)
 {
 	int center;
 
@@ -60,9 +60,9 @@ void myMergeSort::msort(int a[], int tmp[], int left, int right)
 		merge(a, tmp, left, center + 1, right);
 	}
 }
-void myMergeSort::sort(int a[], int l)
+void myMergeSort::sort(element a[], int l)
 {
-	int* tmp = new int[l];
+	element* tmp = new element[l];
 
 	if (tmp != 0)
 	{

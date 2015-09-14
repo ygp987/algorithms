@@ -7,7 +7,7 @@
 
 #include"myAlgorithms.h"
 
-void myAlgorithms::display(int a[], int l)
+void myAlgorithms::display(element a[], int l)
 {
 	int i = 0;
 	for (i = 0; i < l; i++)
@@ -17,18 +17,18 @@ void myAlgorithms::display(int a[], int l)
 	cout << endl;
 }
 
-void myAlgorithms::randomArry(int a[], int min, int max, int N)
+void myAlgorithms::randomArry(element a[], element min, element max, int N)
 {
 	srand((unsigned) time(NULL));
 
 	for (int i = 0; i < N; i++)
 	{
-		a[i] = rand() % (int) (max - min + 1) + min;
+		a[i] = rand() % (element) (max - min + 1) + min;
 	}
 }
-void myAlgorithms::swap(int& a, int& b)
+void myAlgorithms::swap(element& a, element& b)
 {
-	int temp = a;
+	element temp = a;
 	a = b;
 	b = temp;
 }

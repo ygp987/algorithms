@@ -7,9 +7,9 @@
 
 #include "myAlgorithms.h"
 
-int myQuickSort::partition(int a[], int left, int right)
+int myQuickSort::partition(element a[], int left, int right)
 {
-	/*	int x = a[right];							//算法导论原版
+/*		element x = a[right];							//算法导论原版
 	 int i = left - 1;
 	 int j;
 
@@ -24,7 +24,7 @@ int myQuickSort::partition(int a[], int left, int right)
 	 myAlgorithms::swap(a[i + 1], a[right]);
 	 return i + 1;*/
 
-	int x = a[left];							//算法导论修改
+	element x = a[left];							//算法导论修改
 	int i = left;
 	int j;
 
@@ -43,7 +43,7 @@ int myQuickSort::partition(int a[], int left, int right)
 	return i;
 
 	/*
-	 int x = a[left];							//算法
+	 element x = a[left];							//算法
 	 int i = left;
 	 int j = right + 1;
 
@@ -69,8 +69,8 @@ int myQuickSort::partition(int a[], int left, int right)
 	 return j;
 	 */
 
-	/*
-	 int x = a[left];							//数据结构（清华）
+
+/*	 element x = a[left];							//数据结构（清华）
 	 int pivotPos = left;
 
 	 while(true)
@@ -95,7 +95,7 @@ int myQuickSort::partition(int a[], int left, int right)
 	 return right;*/
 }
 
-void myQuickSort::qSort(int a[], int left, int right)
+void myQuickSort::qSort(element a[], int left, int right)
 {
 	if (left < right)
 	{
@@ -105,7 +105,7 @@ void myQuickSort::qSort(int a[], int left, int right)
 	}
 }
 
-void myQuickSort::sort(int a[], int arryLength)
+void myQuickSort::sort(element a[], int arryLength)
 {
 	qSort(a, 0, arryLength - 1);
 }

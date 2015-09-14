@@ -20,7 +20,7 @@ int myHeapSort::right(int i)
 	return 2 * i + 2;
 }
 
-void myHeapSort::maxHeapify(int a[], int i, int length)
+void myHeapSort::maxHeapify(element a[], int i, int length)
 {
 	int l, r, largest;
 	l = left(i);
@@ -46,7 +46,7 @@ void myHeapSort::maxHeapify(int a[], int i, int length)
 		maxHeapify(a, largest, length);
 	}
 }
-void myHeapSort::buildMaxHeapify(int a[], int length)
+void myHeapSort::buildMaxHeapify(element a[], int length)
 {
 	int i;
 	for (i = length / 2; i >= 0; i--)
@@ -54,7 +54,7 @@ void myHeapSort::buildMaxHeapify(int a[], int length)
 		maxHeapify(a, i, length);
 	}
 }
-void myHeapSort::sort(int a[], int length)
+void myHeapSort::sort(element a[], int length)
 {
 	int i;
 	buildMaxHeapify(a, length);

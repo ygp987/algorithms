@@ -11,7 +11,7 @@
 class myBubbleSort
 {
 public:
-	void static sort(int a[], int l);
+	void static sort(element a[], int l);
 };
 
 #endif /* MYBUBBLESORT_H_ */

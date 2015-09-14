@@ -7,10 +7,10 @@
 
 #include "myAlgorithms.h"
 
-void myInsertSort::sort(int a[], int l)
+void myInsertSort::sort(element a[], int l)
 {
 	int i = 0, j = 0;
-	int temp = 0;
+	element temp = 0;
 	for (i = 1; i < l; i++)
 	{
 		j = i - 1;
@@ -23,10 +23,10 @@ void myInsertSort::sort(int a[], int l)
 		a[j + 1] = temp;
 	}
 }
-void myInsertSort::sort(int a[], int l, int increment)
+void myInsertSort::sort(element a[], int l, int increment)
 {
 	int i = 0, j = 0;
-	int temp = 0;
+	element temp = 0;
 	for (i = increment; i < l; i++)
 	{
 		j = i - increment;

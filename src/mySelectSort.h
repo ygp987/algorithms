@@ -11,7 +11,7 @@
 class mySelectSort
 {
 public:
-	void static sort(int a[], int l);
+	void static sort(element a[], int l);
 };
 
 #endif /* MYSELECTSORT_H_ */

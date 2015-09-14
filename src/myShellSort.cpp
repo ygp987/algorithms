@@ -7,7 +7,7 @@
 
 #include "myAlgorithms.h"
 
-void myShellSort::sort(int a[], int l)
+void myShellSort::sort(element a[], int l)
 {
 	/*
 	 int i, j, increment;

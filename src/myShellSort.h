@@ -11,7 +11,7 @@
 class myShellSort
 {
 public:
-	void static sort(int a[], int l);
+	void static sort(element a[], int l);
 };
 
 #endif /* MYSHELLSORT_H_ */

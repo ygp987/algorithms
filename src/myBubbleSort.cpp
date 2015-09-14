@@ -7,7 +7,7 @@
 
 #include "myAlgorithms.h"
 
-void myBubbleSort::sort(int a[], int l)
+void myBubbleSort::sort(element a[], int l)
 {
 	int i = 0, j = 0;
 	for (i = 0; i < l - 1; i++)
