@@ -22,6 +22,7 @@ private:
 
 public:
 	myList();
+	~myList();
 	status initList();
 	status listInsert(int i, element a);
 	status listDelete(int i, element& e);

@@ -74,7 +74,7 @@ int main()
 //	myAlgorithms::display(a, arryLength);
 */
 
-	myList ml;
+/*	myList ml;									//顺序表
 	ml.initList();
 	ml.listInsert(0, 123);
 	ml.listInsert(1, 1234);
@@ -83,8 +83,18 @@ int main()
 	ml.display();
 	ml.listDelete(0);
 	ml.display();
-	cout << ml.locateElement(123) << endl;
+	cout << ml.locateElement(123) << endl;*/
 
+/*	myLinkList<element> mll;					//链表
+	mll.listInsert(0,111);
+	mll.listInsert(0,222);
+	mll.listInsert(0,333);
+	mll.display();
+	element data1;
+	mll.getElement(0, data1);
+	cout<< data1 << endl;
+	mll.listDelete(0);
+	mll.display();*/
 
 	return 0;
 

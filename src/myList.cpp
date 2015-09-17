@@ -14,6 +14,12 @@ myList::myList()
 		cout << "error" << endl;
 	}
 }
+myList::~myList()
+{
+	delete[] data;
+	length = 0;
+	listSize = 0;
+}
 status myList::initList()
 {
 	data = new element[listInitSize];

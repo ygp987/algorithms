@@ -8,6 +8,8 @@
 #ifndef MYALGORITHMS_H_
 #define MYALGORITHMS_H_
 
+using namespace std;
+
 typedef int element;
 typedef bool status;
 
@@ -18,6 +20,7 @@ const bool ERROR = false;
 #include <ctime>
 #include <cstdlib>
 #include <cstring>
+#include <list>
 
 #include "myInsertSort.h"
 #include "mySelectSort.h"
@@ -28,10 +31,11 @@ const bool ERROR = false;
 #include "myQuickSort.h"
 
 #include "myList.h"
+#include "myLinkList.h"
+
 
 #include "test.h"
 
-using namespace std;
 
 class myAlgorithms
 {
